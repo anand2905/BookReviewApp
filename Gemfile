@@ -7,7 +7,6 @@ end
 
 gem 'devise', '~> 4.3'
 gem 'paperclip', git: "git://github.com/thoughtbot/paperclip.git"
-gem 'aws-sdk', '~> 2'
 #gem 'jquery-rails', '2.3.0'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'simple_form', '~> 3.5'
@@ -60,11 +59,10 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :development, :test do
   gem 'sqlite3'
-  gem 'pry'
 end
 
 
 group :production do
   gem 'pg'
-  gem 'rails_12factor'
+  
   end
